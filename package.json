@@ -1,0 +1,10 @@
+{
+  "name": "forecast",
+  "version": "1.0.0",
+  "description": "a weather forecast UI app",
+  "main": "index.js",
+  "repository": "git@github.com:wingedearth/forecast.git",
+  "author": "Andrew A. Anissi <andrew@wingedearth.com>",
+  "license": "MIT",
+  "private": false
+}

@@ -11,7 +11,9 @@ A light weight interface to obtain 5 days of weather forecast information
 
 1. [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 2. [Node.js](https://nodejs.org) v.10+
-4. [Git](https://git-scm.com)
+3. [Git](https://git-scm.com)
+4. [Webpack 5](http://webpack.js.org)
+5. [BabelJS](http://babeljs.io)
 
 ## Set up your local repository
 

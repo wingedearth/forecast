@@ -1,4 +1,7 @@
+import React from 'react';
+import { renderToString } from 'react-dom/server';
 import template from '@/server/template';
+import App from '@/components/App';
 
 const title = 'Forecast';
 const entryName = 'forecast';
@@ -20,12 +23,9 @@ const HomeController = (req, res) => {
 		title
 	};
 
-	const paramsArray = Object.keys(params).map(paramKey => `${paramKey}`).join(', ') || 'none'; 
 
-	const markup = `<p>Welcome to Forecast. Weather forecast will be available soon.</p>
-	<p>Params received: ${paramsArray}</p>
-	<p>Title: ${title}`;
-
+	// Build HTML
+	const markup = renderToString(<App data={data} />);
 	const page = template(data, markup, entryName);
 
 	res.send(page);

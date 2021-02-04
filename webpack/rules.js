@@ -15,6 +15,23 @@ const jsRule = () => {
 	};
 };
 
+const jsxRule = () => {
+	const configFile = babelConfigFile;
+
+	return {
+		test: /\.(jsx)$/,
+		exclude: /node_modules/,
+		use: [
+			{
+				loader: 'babel-loader',
+				options: {
+					configFile
+				}
+			}
+		]
+	};
+};
+
 module.exports = () => {
-	return [jsRule()];
+	return [jsRule(), jsxRule()];
 };

@@ -1,6 +1,12 @@
 const presets = [
+	"@babel/preset-react",
 	[
-		"@babel/env"
+		"@babel/env",
+		{
+			"modules": false,
+			"useBuiltIns": "entry",
+			"corejs": "3.8.3"
+		}
 	]
 ];
 

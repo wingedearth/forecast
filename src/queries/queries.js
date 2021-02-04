@@ -38,7 +38,7 @@ export const queryByCity = ({ city, state, country }, appid) => {
 	if (!city) return Promise.reject({ error: 'invalid request' });
 
 	const q = state ? `${city},${state},us` : country ? `${city},${country}` : city;
-	const urlString = `http://api.openweathermap.org/data/2.5/forecast?appid=${appid}&units=imperial&q=${q}`
+	const urlString = `http://api.openweathermap.org/data/2.5/forecast?appid=${appid}&units=imperial&q=${q}`;
 
 	return sendRequest(urlString);
 };
@@ -49,11 +49,11 @@ export const queryByCity = ({ city, state, country }, appid) => {
  * @param {String} Object.zip
  * @param {String} appid
  */
-export const queryByCity = ({ zip, country = 'us' }, appid) => {
+export const queryByZip = ({ zip, country = 'us' }, appid) => {
 	if (!zip) return Promise.reject({ error: 'invalid request' });
 
-	const zip = `${zip},${country}`;
-	const urlString = `http://api.openweathermap.org/data/2.5/forecast?appid=${appid}&units=imperial&q=${q}`
+	const zipField = `${zip},${country}`;
+	const urlString = `http://api.openweathermap.org/data/2.5/forecast?appid=${appid}&units=imperial&zip=${zipField}`;
 
 	return sendRequest(urlString);
 };

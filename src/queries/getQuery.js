@@ -8,5 +8,6 @@ import * as queries from './queries';
  */
 export default (queryType) => ({
 	BY_ID: queries?.queryById,
-	BY_CITY: queries?.queryByCity
+	BY_CITY: queries?.queryByCity,
+	BY_ZIP: queries?.queryByZip
 }[queryType]) || null;

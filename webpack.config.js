@@ -8,7 +8,9 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const isProd = NODE_ENV === 'production';
 
 const config = {
+	devtool: isProd ? 'source-map' : 'eval-cheap-module-source-map',
 	mode: NODE_ENV,
+	watch: !isProd,
 	entry: {
 		server: path.join(__dirname, 'src', 'server', 'server.js')
 	},

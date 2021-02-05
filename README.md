@@ -6,6 +6,7 @@ A light weight interface to obtain 5 days of weather forecast information
 ## Resources
 1. [SCRUM board via Trello](https://trello.com/b/OQqm0IL3/forecast)
 2. [GitHub Repository](https://github.com/wingedearth/forecast)
+3. [Changelog](https://github.com/wingedearth/forecast/blob/master/CHANGELOG.md)
 
 ## Technologies
 
@@ -16,6 +17,9 @@ A light weight interface to obtain 5 days of weather forecast information
 5. [BabelJS](http://babeljs.io)
 6. [ExpressJS](http://expressjs.com)
 7. [Axios](https://www.npmjs.com/package/axios)
+8. [React](https://reactjs.org)
+9. [commitlint](https://commitlint.js.org/#/)
+10. [nodemon](https://nodemon.io)
 
 ## Set up your local repository
 

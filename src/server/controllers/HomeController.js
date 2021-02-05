@@ -4,7 +4,7 @@ import template from '@/server/template';
 import App from '@/components/App';
 
 const title = 'Forecast';
-const entryName = 'forecast';
+const entryName = 'app';
 
 /**
  * @function HomeController

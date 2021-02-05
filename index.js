@@ -1,5 +1,6 @@
-const webpack = require('webpack');
+// eslint-disable-next-line no-unused-vars
 const colors = require('colors');
+const webpack = require('webpack');
 const { existsSync } = require('fs');
 const path = require('path');
 const frontend = require('./webpack.client.config.js');
@@ -30,33 +31,35 @@ const getVariables = (includeWatch) => {
 	};
 
 	return { variables, variablesWatch };
-}
+};
 
 const cb = (error, stats) => {
 	if (error) console.error('error:', error);
 
-	console.log(stats.toString({
-		assets: false,
-		chunks: false,
-		colors: true,
-		moduleAssets: false,
-		modules: false,
-		entrypoints: 'auto'
-	  }));
+	console.log(
+		stats.toString({
+			assets: false,
+			chunks: false,
+			colors: true,
+			moduleAssets: false,
+			modules: false,
+			entrypoints: 'auto'
+		})
+	);
 
-	  console.log('Build complete.'.brightMagenta);
+	console.log('Build complete.'.brightMagenta);
 };
 
 const build = (variables) => {
 	console.log('Starting build.'.cyan);
 	return Promise.all([webpack(frontend(variables), cb), webpack(backend(variables), cb)]);
-}
+};
 
 const prebuild = (build, variables, variablesWatch) => {
 	console.log('Prebuilding frontend to build manifest.'.cyan);
 	webpack(frontend(variables)).run((error, stats1) => {
 		if (error) console.error('error:', error);
-	
+
 		return build(variablesWatch);
 	});
 };

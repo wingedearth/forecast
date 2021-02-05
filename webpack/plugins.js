@@ -14,13 +14,15 @@ const plugins = ({ APP_ID, APP_VERSION, NODE_ENV }, isServer) => {
 			publicPath: true,
 			writeToDisk: true
 		}),
-		isServer && new webpack.DefinePlugin({
-			...definePluginBase,
-			'process.env.APP_ID': JSON.stringify(APP_ID)
-		}),
-		!isServer && new webpack.DefinePlugin({
-			...definePluginBase
-		}),
+		isServer &&
+			new webpack.DefinePlugin({
+				...definePluginBase,
+				'process.env.APP_ID': JSON.stringify(APP_ID)
+			}),
+		!isServer &&
+			new webpack.DefinePlugin({
+				...definePluginBase
+			}),
 		new CleanWebpackPlugin()
 	].filter(Boolean);
 };

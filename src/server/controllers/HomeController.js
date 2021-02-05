@@ -23,7 +23,6 @@ const HomeController = (req, res) => {
 		title
 	};
 
-
 	// Build HTML
 	const markup = renderToString(<App data={data} />);
 	const page = template(data, markup, entryName);

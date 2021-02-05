@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const getRules = require('./webpack/rules');
 const getPlugins = require('./webpack/plugins');
@@ -7,13 +6,7 @@ const getOptimization = require('./webpack/optimization');
 const isServer = false;
 
 module.exports = (variables) => {
-	const {
-		devtool,
-		isProd,
-		mode,
-		NODE_ENV,
-		watch
-	} = variables;
+	const { devtool, mode, watch } = variables;
 
 	return {
 		entry: {
@@ -43,5 +36,5 @@ module.exports = (variables) => {
 		watchOptions: {
 			ignored: /node_modules/
 		}
-	}
+	};
 };

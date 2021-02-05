@@ -1,4 +1,3 @@
-import { when } from 'q';
 import React from 'react';
 import { hydrate } from 'react-dom';
 
@@ -27,6 +26,9 @@ const whenDOMIsReady = (fn) => {
  */
 export default (Component) => {
 	whenDOMIsReady((data) => {
-		hydrate(<Component data={{...data, test: 'client side data'}} />, document.getElementById('root'))
+		hydrate(
+			<Component data={{ ...data, test: 'client side data' }} />,
+			document.getElementById('root')
+		);
 	});
 };

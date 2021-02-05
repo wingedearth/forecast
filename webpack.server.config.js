@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const getRules = require('./webpack/rules');
@@ -8,15 +7,7 @@ const getOptimization = require('./webpack/optimization');
 const isServer = true;
 
 const backend = (variables) => {
-	const {
-		APP_ID,
-		APP_VERSION,
-		devtool,
-		isProd,
-		mode,
-		NODE_ENV,
-		watch
-	} = variables;
+	const { devtool, mode, watch } = variables;
 
 	return {
 		devtool,
@@ -45,10 +36,12 @@ const backend = (variables) => {
 			ignored: /node_modules/
 		},
 		target: 'node',
-		externals: [nodeExternals({
-			allowlist: ['webpack/hot/dev-server', /\.(?!(?:jsx?|json)$).{1,5}$/i]
-		})]
-	}
+		externals: [
+			nodeExternals({
+				allowlist: ['webpack/hot/dev-server', /\.(?!(?:jsx?|json)$).{1,5}$/i]
+			})
+		]
+	};
 };
 
 module.exports = backend;

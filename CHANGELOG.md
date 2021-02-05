@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/wingedearth/forecast/compare/v1.2.0...v1.3.0) (2021-02-05)
+
+
+### Features
+
+* add eslint ([17828a8](https://github.com/wingedearth/forecast/commit/17828a8695f14e62eda9dc54926c7ab1451a9902))
+
+## [1.2.0](https://github.com/wingedearth/forecast/compare/v1.1.0...v1.2.0) (2021-02-05)
+
+
+### Features
+
+* add frontend hydration and full stack build ([f5aa366](https://github.com/wingedearth/forecast/commit/f5aa366c6b7247b55f188f9ff086083bdf54f80c))
+
 ## [1.1.0](https://github.com/wingedearth/forecast/compare/v1.0.0...v1.1.0) (2021-02-04)
 
 

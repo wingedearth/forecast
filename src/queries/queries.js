@@ -1,13 +1,15 @@
+/* eslint-disable prefer-promise-reject-errors */
 import axios from 'axios';
 
 // TODO: add validation for possible country codes, city names
 
 const sendRequest = (urlString) =>
-	axios.get(urlString)
-		.then(response => {
+	axios
+		.get(urlString)
+		.then((response) => {
 			return { data: response?.data };
 		})
-		.catch(error => {
+		.catch((error) => {
 			console.error('error:', error.message);
 			return { error };
 		});

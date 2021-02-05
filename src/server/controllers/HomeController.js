@@ -4,7 +4,7 @@ import template from '@/server/template';
 import App from '@/components/App';
 
 const title = 'Forecast';
-const entryName = 'forecast';
+const entryName = 'app';
 
 /**
  * @function HomeController
@@ -22,7 +22,6 @@ const HomeController = (req, res) => {
 		params,
 		title
 	};
-
 
 	// Build HTML
 	const markup = renderToString(<App data={data} />);

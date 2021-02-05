@@ -1,6 +1,6 @@
 {
   "name": "forecast",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "a weather forecast UI app",
   "repository": "git@github.com:wingedearth/forecast.git",
   "author": "Andrew A. Anissi <andrew@wingedearth.com>",

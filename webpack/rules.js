@@ -35,6 +35,6 @@ const jsxRule = (isServer) => {
 	};
 };
 
-module.exports = ({}, isServer) => {
+module.exports = (variables, isServer) => {
 	return [jsRule(isServer), jsxRule(isServer)];
 };

@@ -12,6 +12,7 @@ const App = ({ data }) => {
 		<main>
 			<h1>{data?.title}</h1>
 			<h3>A storm is coming...</h3>
+			<h3>{data?.test}</h3>
 		</main>
 	);
 };
@@ -23,5 +24,7 @@ App.defaultProps = {
 App.propTypes = {
 	data: object
 };
+
+App.displayName = 'App';
 
 export default App;

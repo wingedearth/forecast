@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { query } from 'express';
 import getQuery from '@/queries/getQuery';
+import { APP_ID } from '@/config/config';
 
 /**
  * @function ApiController
@@ -10,12 +11,12 @@ import getQuery from '@/queries/getQuery';
  */
 const ApiController = (req, res) => {
 	const { queryType, ...inputData } = req.body;
-	const appid = process.env.APP_ID;
+	// const appid = process.env.APP_ID;
 	const query = getQuery(queryType);
 
 	if (!query) res.status(400).json({ "error": "no data" });
 
-	query(inputData, appid)
+	query(inputData, APP_ID)
 		.then(data => {
 			res.json(data);
 		})

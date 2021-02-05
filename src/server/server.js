@@ -6,7 +6,10 @@ const port = process.env.PORT || 4000;
 const app = express();
 
 // Attach middleware
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+
+// Static paths
+app.use(express.static('dist/client'));
 
 // log server errors
 app.on('error', (err) => {
@@ -20,7 +23,7 @@ const server = app.listen(port, () => {
 	console.log(`A goblin-mage has conjured a server at port, ${port}.`);
 });
 
-// graceful exit
+// Graceful exit
 process.on('SIGINT', () => {
 	server.close((err) => {
 		if (err) return process.exit(1);

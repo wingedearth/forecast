@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/wingedearth/forecast/compare/v1.5.0...v1.6.0) (2021-02-06)
+
+
+### Features
+
+* add jest / enzyme and some unit tests ([e1bfb62](https://github.com/wingedearth/forecast/commit/e1bfb629813f423c73719abbf70dbd30d27d89a2))
+
 ## [1.5.0](https://github.com/wingedearth/forecast/compare/v1.4.0...v1.5.0) (2021-02-06)
 
 

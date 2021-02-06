@@ -1,5 +1,5 @@
 import getQuery from '@/queries/getQuery';
-import { APP_ID } from '@/config/config';
+import { APP_ID } from '@/constants/config';
 
 /**
  * @function ApiController

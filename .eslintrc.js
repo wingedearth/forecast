@@ -3,7 +3,8 @@ module.exports = {
 		commonjs: true,
 		browser: true,
 		es6: true,
-		node: true
+		node: true,
+		jest: true
 	},
 	extends: ['plugin:react/recommended', 'standard', 'prettier'],
 	settings: {

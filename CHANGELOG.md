@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/wingedearth/forecast/compare/v1.3.0...v1.4.0) (2021-02-06)
+
+
+### Features
+
+* add styling ([8c7900f](https://github.com/wingedearth/forecast/commit/8c7900fbfd88cb644aa6e512e80d81ff6b70571c))
+
+
+### Bug Fixes
+
+* configure env vars for heroku ([3d9cd80](https://github.com/wingedearth/forecast/commit/3d9cd80fc9b71e324af74403b22090e6e3d8c41f))
+
 ## [1.3.0](https://github.com/wingedearth/forecast/compare/v1.2.0...v1.3.0) (2021-02-05)
 
 

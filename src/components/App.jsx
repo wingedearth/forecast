@@ -1,5 +1,7 @@
 import React from 'react';
 import { object } from 'prop-types';
+import '../styles/styles.scss';
+import './App.scss';
 
 /**
  * @function App
@@ -10,9 +12,12 @@ import { object } from 'prop-types';
 const App = ({ data }) => {
 	return (
 		<main>
-			<h1>{data?.title}</h1>
-			<h3>A storm is coming...</h3>
-			<h3>{data?.test}</h3>
+			<div className="container">
+				<h1>{data?.title}</h1>
+				<p className="emoji">🌩️🌞☁️⚡</p>
+				<h3>A storm is coming...</h3>
+				<h3>{data?.test}</h3>
+			</div>
 		</main>
 	);
 };

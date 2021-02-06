@@ -1,4 +1,4 @@
-import * as queries from './queries';
+import { queryById, queryByCity, queryByZip } from './queries';
 
 /**
  * @function getQuery
@@ -8,7 +8,7 @@ import * as queries from './queries';
  */
 export default (queryType) =>
 	({
-		BY_ID: queries?.queryById,
-		BY_CITY: queries?.queryByCity,
-		BY_ZIP: queries?.queryByZip
+		BY_ID: queryById,
+		BY_CITY: queryByCity,
+		BY_ZIP: queryByZip
 	}[queryType] || null);

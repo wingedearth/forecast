@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const babelServerConfigFile = path.join(__dirname, '..', 'babel.server.config.js');
-const babelClientConfigFile = path.join(__dirname, '..', 'babel.client.config.js');
+const babelClientConfigFile = path.join(__dirname, '..', 'babel.config.js');
 
 const jsRule = (isServer) => {
 	const configFile = isServer ? babelServerConfigFile : babelClientConfigFile;

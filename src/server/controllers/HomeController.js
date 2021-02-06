@@ -2,9 +2,11 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import template from '@/server/template';
 import App from '@/components/App';
+import Home from '@/components/pages/Home';
 
-const title = 'Forecast';
-const entryName = 'app';
+const appTitle = 'Forecast';
+const pageTitle = 'Dashboard';
+const entryName = 'home';
 
 /**
  * @function HomeController
@@ -19,12 +21,17 @@ const HomeController = (req, res) => {
 	};
 
 	const data = {
-		params,
-		title
+		appTitle,
+		pageTitle,
+		params
 	};
 
 	// Build HTML
-	const markup = renderToString(<App data={data} />);
+	const markup = renderToString(
+		<App data={data}>
+			<Home />
+		</App>
+	);
 	const page = template(data, markup, entryName);
 
 	res.send(page);

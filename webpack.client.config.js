@@ -10,7 +10,7 @@ module.exports = (variables) => {
 
 	return {
 		entry: {
-			app: path.join(__dirname, 'src', 'entries/app.js')
+			home: path.join(__dirname, 'src', 'entries/home.js')
 		},
 		output: {
 			filename: 'js/[name].js',

@@ -1,0 +1,26 @@
+@import '@/styles/helpers';
+
+.navigation__title {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.navigation__icons {
+	position: absolute;
+	right: 10px;
+	max-height: 30px;
+
+	.icon {
+		display: inline-block;
+		height: 30px;
+	}
+}
+
+@include tablet-landscape {
+	.navigation__title {
+		position: absolute;
+		left: 10px;
+	}
+}

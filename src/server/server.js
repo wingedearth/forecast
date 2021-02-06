@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 // Static paths
 app.use(express.static('dist/client'));
 app.use(express.static('public'));
+app.use(express.static('dist/images'));
 app.use(favicon(path.join(__dirname, '..', 'public', 'favicon.ico')));
 
 // log server errors

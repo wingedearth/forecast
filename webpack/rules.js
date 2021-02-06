@@ -50,6 +50,27 @@ const styleRule = ({ isProd }, isServer) => {
 	return rule;
 };
 
+const imageRule = (isServer) => ({
+	test: /\.(png|jpg|jpeg|gif|ico)$/,
+	exclude: /node_modules/,
+	use: [
+		{
+			loader: 'file-loader',
+			options: {
+				publicPath: '/',
+				outputPath: '../images',
+				name: '[name].[ext]',
+				emitFile: isServer
+			}
+		}
+	]
+});
+
 module.exports = (variables, isServer) => {
-	return [jsRule(isServer), jsxRule(isServer), styleRule(variables, isServer)];
+	return [
+		jsRule(isServer),
+		jsxRule(isServer),
+		styleRule(variables, isServer),
+		imageRule(isServer)
+	];
 };

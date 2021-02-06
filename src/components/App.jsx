@@ -1,6 +1,6 @@
 import React from 'react';
 import { any, object } from 'prop-types';
-import Navigation from './Navigation';
+import Navigation from '@/components/Navigation';
 import { AppContext } from './AppContext';
 import '@/styles/styles.scss';
 import './App.scss';
@@ -12,7 +12,6 @@ import './App.scss';
  * @returns {React.ReactElement}
  */
 const App = ({ children, data }) => {
-
 	return (
 		<AppContext.Provider value={data}>
 			<main>

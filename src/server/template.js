@@ -32,7 +32,7 @@ export const getStyleTags = (files) =>
  * @returns {String} html markup
  */
 const template = (data, markup, entryName) => {
-	const { title } = data;
+	const { appTitle, pageTitle } = data;
 	const manifest = require('../../dist/client/assets-manifest.json');
 	const entry = manifest?.entrypoints?.[entryName]?.assets;
 	const scriptTags = getScriptTags(entry?.js);
@@ -44,7 +44,7 @@ const template = (data, markup, entryName) => {
 			<head>
 				<meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>${title}</title>
+				<title>${`${appTitle} - ${pageTitle}`}</title>
 				<link rel="preconnect" href="https://fonts.gstatic.com"> 
 				<link href="https://fonts.googleapis.com/css2?family=Exo:wght@500;600;700;800&display=swap" rel="stylesheet">
 				${styleTags}

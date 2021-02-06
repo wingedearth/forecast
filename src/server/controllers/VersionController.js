@@ -1,5 +1,5 @@
 import packageJson from '../../../package.json';
-import { APP_VERSION, NODE_ENV } from '@/config/config';
+import { APP_VERSION, NODE_ENV } from '@/constants/config';
 
 /**
  * @function VersionController

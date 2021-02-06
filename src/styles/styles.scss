@@ -1,0 +1,15 @@
+@import 'minireset';
+@import 'helpers';
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+}
+
+.container {
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.emoji {
+	font-family: 'color-emoji';
+}

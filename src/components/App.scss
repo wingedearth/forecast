@@ -1,0 +1,11 @@
+@import '@/styles/helpers';
+
+main {
+	font-family: 'Exo';
+	font-size: $size-normal;
+	font-weight: $weight-medium;
+	color: $color-2;
+	background-color: $color-3;
+	height: 100%;
+	min-height: 1200px;
+}

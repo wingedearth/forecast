@@ -1,5 +1,6 @@
 import React from 'react';
 import { hydrate } from 'react-dom';
+import App from '@/components/App';
 
 /**
  * @func whenDOMIsReady
@@ -27,7 +28,9 @@ const whenDOMIsReady = (fn) => {
 export default (Component) => {
 	whenDOMIsReady((data) => {
 		hydrate(
-			<Component data={{ ...data, test: 'client side data' }} />,
+			<App data={data}>
+				<Component />
+			</App>,
 			document.getElementById('root')
 		);
 	});

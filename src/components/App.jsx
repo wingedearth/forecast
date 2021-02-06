@@ -1,6 +1,8 @@
 import React from 'react';
-import { object } from 'prop-types';
-import '../styles/styles.scss';
+import { any, object } from 'prop-types';
+import Navigation from './Navigation';
+import { AppContext } from './AppContext';
+import '@/styles/styles.scss';
 import './App.scss';
 
 /**
@@ -9,16 +11,15 @@ import './App.scss';
  * @param {Object} data
  * @returns {React.ReactElement}
  */
-const App = ({ data }) => {
+const App = ({ children, data }) => {
+
 	return (
-		<main>
-			<div className="container">
-				<h1>{data?.title}</h1>
-				<p className="emoji">🌩️🌞☁️⚡</p>
-				<h3>A storm is coming...</h3>
-				<h3>{data?.test}</h3>
-			</div>
-		</main>
+		<AppContext.Provider value={data}>
+			<main>
+				<Navigation />
+				{children}
+			</main>
+		</AppContext.Provider>
 	);
 };
 
@@ -27,6 +28,7 @@ App.defaultProps = {
 };
 
 App.propTypes = {
+	children: any,
 	data: object
 };
 

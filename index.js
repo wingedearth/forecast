@@ -7,7 +7,8 @@ const frontend = require('./webpack.client.config.js');
 const backend = require('./webpack.server.config.js');
 
 const getVariables = (includeWatch) => {
-	require('dotenv').config();
+	const IS_DEPLOYED = process.env.IS_DEPLOYED;
+	if (!IS_DEPLOYED) require('dotenv').config();
 	const APP_VERSION = process.env.APP_VERSION || process.env.npm_package_version;
 	const APP_ID = process.env.APP_ID || null;
 	const NODE_ENV = process.env.NODE_ENV || 'development';

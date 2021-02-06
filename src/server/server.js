@@ -1,5 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import path from 'path';
+import favicon from 'serve-favicon';
 import router from './router';
 
 const port = process.env.PORT || 4000;
@@ -10,6 +12,8 @@ app.use(bodyParser.json());
 
 // Static paths
 app.use(express.static('dist/client'));
+app.use(express.static('public'));
+app.use(favicon(path.join(__dirname, '..', 'public', 'favicon.ico')));
 
 // log server errors
 app.on('error', (err) => {

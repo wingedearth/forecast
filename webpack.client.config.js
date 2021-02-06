@@ -24,7 +24,7 @@ module.exports = (variables) => {
 				'@': path.join(__dirname, 'src'),
 				process: 'process/browser'
 			},
-			extensions: ['.js', '.json', '.jsx', '.scss'],
+			extensions: ['.js', '.json', '.jsx', 'css', 'sass', '.scss'],
 			modules: ['node_modules']
 		},
 		module: {

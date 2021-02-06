@@ -1,3 +1,6 @@
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+
 const serverOptimization = {
 	nodeEnv: false
 };
@@ -16,7 +19,13 @@ const clientOptimization = {
 				minChunks: 3
 			}
 		}
-	}
+	},
+	minimizer: [
+		new TerserPlugin(),
+		new CssMinimizerPlugin({
+			sourceMap: true
+		})
+	]
 };
 
 module.exports = (isServer) => (isServer ? serverOptimization : clientOptimization);

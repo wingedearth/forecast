@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/wingedearth/forecast/compare/v1.4.0...v1.5.0) (2021-02-06)
+
+
+### Features
+
+* add banner, navigation, and Home component ([4e47b66](https://github.com/wingedearth/forecast/commit/4e47b66c1340c034428ffd7cea9d448d52df0e06))
+
 ## [1.4.0](https://github.com/wingedearth/forecast/compare/v1.3.0...v1.4.0) (2021-02-06)
 
 

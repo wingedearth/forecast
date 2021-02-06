@@ -8,8 +8,16 @@ h1, h2, h3, h4, h5, h6 {
 .container {
 	padding: 10px 10px;
 	text-align: center;
+	height: 100%;
+	margin: 0 auto;
 }
 
 .emoji {
 	font-family: 'color-emoji';
+}
+
+@include desktop {
+	.container {
+		max-width: 1200px;
+	}
 }

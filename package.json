@@ -78,13 +78,15 @@
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
     "core-js": "^3.8.3",
+    "date-fns": "^2.17.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "prop-types": "^15.7.2",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "rimraf": "^3.0.2",
     "serialize-javascript": "^5.0.1",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "zipcodes": "^8.0.0"
   }
 }

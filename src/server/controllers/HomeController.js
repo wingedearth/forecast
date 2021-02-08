@@ -4,8 +4,8 @@ import template from '@/server/template';
 import App from '@/components/App';
 import Home from '@/components/pages/Home';
 
-const appTitle = 'Forecast';
-const pageTitle = 'Dashboard';
+const appTitle = 'Forecast USA';
+const pageTitle = 'Weather';
 const entryName = 'home';
 
 /**

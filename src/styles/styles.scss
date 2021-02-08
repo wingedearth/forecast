@@ -13,7 +13,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .emoji {
-	font-family: 'color-emoji';
+	font-family: color-emoji;
+	font-size: 30px;
+	letter-spacing: 5px;
 }
 
 @include desktop {

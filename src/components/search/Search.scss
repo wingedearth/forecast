@@ -1,0 +1,15 @@
+@import '@/styles/helpers';
+
+.search {
+	max-width: 100%;
+	margin: 10px auto;
+	background-color: $color-1;
+	color: $color-2;
+	border-radius: 2px;
+};
+
+@include tablet-portrait {
+	.search {
+		max-width: 600px;
+	}
+}

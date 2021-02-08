@@ -1,0 +1,19 @@
+@import '@/styles/helpers';
+
+.button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	background-color: $color-2;
+	color: $color-3;
+	font-weight: $weight-semibold;
+	width: 120px;
+	height: 30px;
+	border-width: 1px;
+
+	&:hover {
+		background-color: $color-3;
+		color: $color-2;
+		cursor: pointer;
+	}
+};

@@ -39,6 +39,8 @@ module.exports = {
 		],
 		'comma-dangle': ['error', 'never'],
 		semi: ['error', 'always'],
-		'no-tabs': 0
+		'no-tabs': 0,
+		'no-unused-vars': 1,
+		'prefer-promise-reject-errors': 0
 	}
 };

@@ -1,0 +1,25 @@
+@import '@/styles/helpers';
+
+.weather-result {
+	color: $color-2;
+	background-color: $color-1;
+}
+
+.weather-result--reverse {
+	color: $color-2;
+	background-color: $color-3;
+}
+
+.weather-result__conditions {
+	display: flex;
+	align-items: center;
+	margin: -5px auto;
+}
+
+.weather-result__description:first-letter {
+	text-transform: capitalize;
+}
+
+.weather-result__icon {
+	margin: -20px auto;
+}

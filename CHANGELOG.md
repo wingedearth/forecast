@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/wingedearth/forecast/compare/v1.7.0...v1.7.1) (2021-02-08)
+
+
+### Bug Fixes
+
+* update README ([0733b4b](https://github.com/wingedearth/forecast/commit/0733b4b7b433e324eefd9cfa5a40d6fda32f7ad7))
+
 ## [1.7.0](https://github.com/wingedearth/forecast/compare/v1.6.0...v1.7.0) (2021-02-08)
 
 

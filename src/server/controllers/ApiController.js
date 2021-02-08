@@ -9,7 +9,6 @@ import { APP_ID } from '@/constants/config';
  */
 const ApiController = (req, res) => {
 	const { queryType, ...inputData } = req.body;
-	// const appid = process.env.APP_ID;
 	const query = getQuery(queryType);
 
 	if (!query) res.status(400).json({ error: 'no data' });

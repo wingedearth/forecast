@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/wingedearth/forecast/compare/v1.6.0...v1.7.0) (2021-02-08)
+
+
+### Features
+
+* add search functionality and render results ([3923987](https://github.com/wingedearth/forecast/commit/392398754c6ebdc96d3882ac13c44bd10f230564))
+
 ## [1.6.0](https://github.com/wingedearth/forecast/compare/v1.5.0...v1.6.0) (2021-02-06)
 
 
